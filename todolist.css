@@ -1,0 +1,112 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: burlywood;
+}
+
+.todo-container{
+    position: fixed;
+    text-align: center;
+    margin: 0;
+}
+
+/* Input Box and List */
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* task list, Done Button, AddTask Button & Remove Button*/
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 3px;
+    
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+}
+
+.task-item  .done-button,
+.task-item .cross-button{
+    margin-right: 5px;
+    flex: 0;
+}
+
+.task-item .cross-button{
+    order: 3;
+}
+
+.task-item .task-text {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+button{
+    padding: 8px 16px;
+    color: black;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+.done-button:hover{
+    background-color: chartreuse;
+}
+
+.cross-button:hover{
+    background-color: red;
+}
+
+/* alert box */
+.alert {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+.alert-content{
+    position: relative;
+}
+
+.close-btn{
+    position: absolute;
+    bottom: 90%;
+    right: -10%;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+.close-btn:hover{
+    color: red;
+}
